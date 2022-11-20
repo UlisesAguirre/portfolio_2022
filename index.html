@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="style/img/icon.ico">
+    <title>UA - Desarrollo Web</title>
+</head>
+
+<body>
+    <!-- sección inicio -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/UA/</h1>
+                    <nav id="nav">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobre-mi" class="no-seleccionado" onclick="seleccionar(this)">SOBRE MI</a>
+                            </li>
+                            <li><a href="#servicios" class="no-seleccionado" onclick="seleccionar(this)">SERVICIOS</a>
+                            </li>
+                            <li><a href="#portfolio" class="no-seleccionado" onclick="seleccionar(this)">PORTFOLIO</a>
+                            </li>
+                            <li><a href="#contacto" class="no-seleccionado" onclick="seleccionar(this)">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- Iconos del menu resposive -->
+                    <div id="icono-nav" onclick='resposiveMenu()'>
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <!-- iconos de redes sociales -->
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/aguirre-ulises-dev/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/UlisesAguirre" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/UlisesAguirreDv" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Ulises Aguirre</span> , Desarrollador Frontend</h2>
+                <p class="descripcion">"Controlar la complejidad es la esencia de la programación"</p>
+                <a href="#portfolio">Ir al portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- sección sobre mí -->
+    <section id="sobre-mi">
+        <div class="contenedor-foto">
+            <img src="style/img/foto.webp" alt="">
+        </div>
+        <div class="sobre-mi">
+            <p class="titulo-seccion">Sobre mí</p>
+            <h2>Hola, soy <span>Ulises Aguirre</span></h2>
+            <h3>Desarrollador Frontend</h3>
+            <p>Estudiante de programación desde hace 2 años, con experiencia en múltiples proyectos en lenguajes como
+                Javascript (html & css), Python y lenguaje C. </p>
+            <p>Poseo habilidades de análisis, planificación y trabajo en equipo que he adquirido durante mis
+                estudios universitarios, además de creatividad e innovación a la hora de emprender proyectos nuevos.</p>
+            <p>Actualmente enfocado en obtener mas conocimiento acerca de tecnologías como: Php y Mysql.</p>
+            <a href="https://drive.google.com/uc?id=154Ja8RGfdhWekvWKXHeewa6zWoqx9BHn&export=download">Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- sección servicios -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono icono1"><i class="fa-solid fa-pen-nib"></i></span>
+                <h4>Creative Design</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Diseño</li>
+                    <li>Creatividad</li>
+                </ul>
+                <p>Un buen y atractivo diseño web lo ayuda a mantener sus clientes potenciales en su sitio, siendo esta la
+                    cara digital de su negocio.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono icono2"><i class="fa-solid fa-mobile-screen"></i></span>
+                <h4>Full Responsive</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Pc</li>
+                    <li>Tableta</li>
+                    <li>Teléfono</li>
+                </ul>
+                <p>Su sitio se mostrará correctamente en cualquier dispositivo, incluidas computadoras de escritorio,
+                    tabletas y teléfonos móviles.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono icono3"><i class="fa-solid fa-code"></i></span>
+                <h4>Development</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Performance</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Conozco la importancia del diseño web y puedo ayudarte a crear un sitio web que te encantará.</p>
+            </div>
+        </div>
+        <!-- <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphics</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero adipisci ratione, aspernatur ut enim
+                    omnis aperiam quae modi quos voluptates, iure ea, ipsa sit saepe? Veniam optio quis est placeat!Fz
+                </p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphics</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero adipisci ratione, aspernatur ut enim
+                    omnis aperiam quae modi quos voluptates, iure ea, ipsa sit saepe? Veniam optio quis est placeat!Fz
+                </p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphics</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero adipisci ratione, aspernatur ut enim
+                    omnis aperiam quae modi quos voluptates, iure ea, ipsa sit saepe? Veniam optio quis est placeat!Fz
+                </p>
+            </div>
+        </div> -->
+    </section>
+
+    <!-- sección habilidades -->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES</h3>
+        <div class="carrusel">
+            <div class="carrusel-items">
+                <div class="carrusel-item">
+                    <img src="style/img/skills/html.png" alt="">
+                </div>
+                <div class="carrusel-item">
+                    <img src="style/img/skills/css.png" alt="">
+                </div>
+                <div class="carrusel-item">
+                    <img src="style/img/skills/js.png" alt="">
+                </div>
+                <div class="carrusel-item">
+                    <img src="style/img/skills/c.png" alt="">
+                </div>
+                <div class="carrusel-item">
+                    <img src="style/img/skills/python.png" alt="">
+                </div>
+                <div class="carrusel-item">
+                    <img src="style/img/skills/git.png" alt="">
+                </div>
+                <div class="carrusel-item">
+                    <img src="style/img/skills/github.png" alt="">
+                </div>
+                <div class="carrusel-item">
+                    <img src="style/img/skills/docker.png" alt="">
+                </div>
+                <div class="carrusel-item">
+                    <img src="style/img/skills/kubernetes.png" alt="">
+                </div>
+                <div class="carrusel-item">
+                    <img src="style/img/skills/sqlite.png" alt="">
+                </div>
+                <div class="carrusel-item">
+                    <img src="style/img/skills/linux.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- <div class="skill">
+            <div class="info">
+                <p><i class="fa-brands fa-html5" id="html"></i> <i class="fa-brands fa-css3-alt" id="css"></i> HTML5 & CSS3</p>
+                <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso1"></div>
+            </div>
+            <div class="skill">
+                <div class="info">
+                    <p><i class="fa-brands fa-square-js logo" id="javascript"></i>  Javascript</p>
+                    <span class="porcentaje">70%</span>
+                </div>
+                <div class="barra">
+                    <div id="js" class="barra-progreso2"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="info">
+                    <p><i class="fa-solid fa-copyright" id="c"></i> Lenguaje C</p>
+                    <span class="porcentaje">90%</span>
+                </div>
+                <div class="barra">
+                    <div id="c" class="barra-progreso3"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="info">
+                    <p><i class="fa-brands fa-python" id="python"></i> Python</p>
+                    <span class="porcentaje">60%</span>
+                </div>
+                <div class="barra">
+                    <div id="python" class="barra-progreso4"></div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    <!-- sección portafolio -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="style/img/curso.webp" alt="" class="zoom">
+                <div class="info">
+                    <div class="info-container">
+                        <div class="div-info">
+                            <h4>Curso</h4>
+                            <p>Curso CSS</p>
+                        </div>
+                        <div class="enlace">
+                            <a href="https://ulisesaguirre.github.io/course_page_example" target="_blank"><i class="fa-solid fa-earth-americas"></i>Pagína</a>
+                            <a href="https://github.com/UlisesAguirre/course_page_example.git" target="_blank"><i class="fa-brands fa-github"></i>Codigo</a>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="proyecto">
+                <div class="overlay"></div>
+                <img src="style/img/restaurante.webp" alt="" class="zoom">
+                <div class="info">
+                    <div class="info-container">
+                        <div class="div-info">
+                            <h4>Restaurante</h4>
+                            <p>La Italiana</p>
+                        </div>
+                        <div class="enlace">
+                            <a href="https://ulisesaguirre.github.io/restaurant_page_example" target="_blank"><i class="fa-solid fa-earth-americas"></i>Pagína</a>
+                            <a href="https://github.com/UlisesAguirre/restaurant_page_example.git" target="_blank"><i class="fa-brands fa-github"></i>Codigo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="style/img/barberia.webp" alt="" class="zoom">
+                <div class="info">
+                    <div class="info-container">
+                        <div class="div-info">
+                            <h4>Barbería</h4>
+                            <p>Alura Latam</p>
+                        </div>
+                        <div class="enlace">
+                            <a href="https://ulisesaguirre.github.io/Barbershop_page_HTML5_CSS/index.html" target="_blank"><i class="fa-solid fa-earth-americas"></i>Pagína</a>
+                            <a href="https://github.com/UlisesAguirre/Barbershop_page_HTML5_CSS.git" target="_blank"><i class="fa-brands fa-github"></i>Codigo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="style/img/clima-app.webp" alt="" class="zoom">
+                <div class="info">
+                    <div class="info-container">
+                        <div class="div-info">
+                            <h4>Clima App</h4>
+                            <p>Api Weather</p>
+                        </div>
+                        <div class="enlace">
+                            <a href="https://ulisesaguirre.github.io/tup-lc2-clima-app/index.html"><i class="fa-solid fa-earth-americas"></i>Pagína</a>
+                            <a href="https://github.com/UlisesAguirre/tup-lc2-clima-app"><i class="fa-brands fa-github"></i>Codigo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="proyecto oculto">
+                <div class="overlay"></div>
+                <img src="style/img/barberia.jpg" alt="" class="zoom">
+                <div class="info">
+                    <div class="info-container">
+                        <div class="div-info">
+                            <h4>Barbería</h4>
+                            <p>Alura Latam</p>
+                        </div>
+                        <div class="enlace">
+                            <a href=""><i class="fa-solid fa-earth-americas"></i>Pagína</a>
+                            <a href=""><i class="fa-brands fa-github"></i>Codigo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="proyecto oculto">
+                <div class="overlay"></div>
+                <img src="style/img/barberia.jpg" alt="" class="zoom">
+                <div class="info">
+                    <div class="info-container">
+                        <div class="div-info">
+                            <h4>Barbería</h4>
+                            <p>Alura Latam</p>
+                        </div>
+                        <div class="enlace">
+                            <a href=""><i class="fa-solid fa-earth-americas"></i>Pagína</a>
+                            <a href=""><i class="fa-brands fa-github"></i>Codigo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sección contacto -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contáctame</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="text" placeholder="Dirección de E-mail" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje..."
+                        class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- sección footer -->
+    <footer>
+        <p>Derechos reservados &copy; Ulises Aguirre</p>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/aguirre-ulises-dev/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/UlisesAguirre" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://twitter.com/UlisesAguirreDv" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

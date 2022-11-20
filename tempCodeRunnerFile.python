@@ -1,0 +1,10 @@
+velocidad_base = 20
+velocidad = 20
+velocidad_no_base = 0
+for i in range(2):
+    velocidad_no_base += 0.05
+    velocidad = velocidad + (velocidad * 0.05) 
+
+print(velocidad)
+print(velocidad_no_base)
+print(velocidad_base   + (velocidad_base * velocidad_no_base))
